@@ -48,6 +48,7 @@ RUN cd /src/ && python setup.py install \
     && askbot-setup -n /${SITE} -e 1 -d postgres -u postgres -p askbotPW --db-host=postgres --db-port=5432 --logfile-name=stdout --no-secret-key --create-project container-uwsgi
 
 RUN true \
+    && mkdir -p /${SITE}/askbot_app/log/ \
     && cp /${SITE}/askbot_app/prestart.sh /app \
     && /usr/bin/crontab /${SITE}/askbot_app/crontab \
     && cd /${SITE} && SECRET_KEY=whatever DJANGO_SETTINGS_MODULE=askbot_app.settings python manage.py collectstatic --noinput
