@@ -79,7 +79,7 @@
             {% if request.user.is_authenticated %}
             <p>
                 <a
-                    href="{{ url('user_profile', request.user.id, slugify(request.user.username))
+                    href="{{ url('user_profile', request.user.id, request.user.username|slugify)
                         }}?sort=email_subscriptions"
                 >{% trans %}Change frequency of emails{% endtrans %}</a>
             </p>

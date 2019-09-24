@@ -2,10 +2,11 @@
 django-appconf
 akismet==1.0.1
 beautifulsoup4<=4.7.1
+dj-database-url
 django-avatar
 django-compressor>=2.0,<=2.2
 django-countries>=3.3
--e git+https://github.com/martin-bts/django-followit.git#egg=django-followit
+-e git+https://github.com/martin-bts/django-followit.git@django2.0_ready#egg=django-followit
 django-keyedcache3>=1.5.1
 -e git+https://github.com/sebastian-philipp/django-livesettings3#egg=django-livesettings3
 django-jinja==2.4.1
@@ -17,21 +18,19 @@ django-transaction-signals==1.0.0
 django>=2.1,<2.3
 celery>=4.0,<=5.0
 html5lib==0.9999999
-Jinja2==2.10
+Jinja2>=2.10
 jsonfield>=2.0.0
 kombu>=3.0
 markdown2<=2.3.8
 mock==3.0.5
 oauth2<=1.9.0.post1
 pyjwt<=1.7.1
-pystache==0.3.1
 python-cas==1.4.0
 python-openid2>=2.3.0
 pytz<=2019.1
 responses>=0.9.0
+requests-oauthlib
 requirements-parser==0.2.0
 regex
-sanction==0.3.1
 simplejson<=3.16.1
-six==1.10.0
 unidecode<=1.0.23

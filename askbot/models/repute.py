@@ -164,7 +164,7 @@ class Award(models.Model):
                                                         self.awarded_at)
     def __lt__(self, other):
         return self.id < other.id
-    
+
     class Meta:
         app_label = 'askbot'
         db_table = 'award'
